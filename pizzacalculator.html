@@ -1,0 +1,46 @@
+<html>
+<body>
+	<h1>Pizza Calculator</h1>
+	<h3>Small pizza 4.00 euro</h3>
+	<h3>Medium pizza 6.00 euro</h3>
+	<h3>Large pizza 8.00 euro</h3>
+
+	<button onclick="myFunction()">Als je weet wat je wilt kun je het hier invullen</button> 
+	<p id="demo"></p>
+<script>
+	function myFunction () {
+		 qSmall = prompt("Vul hier in hoeveel Small pizza je wilt");
+		 qMedium = prompt("Vul hier in hoeveel medium pizza je wilt");
+		 qLarge = prompt("vul hier in hoeveel large pizza je wilt");
+		
+	
+	const pSmall = 4;
+	const pMedium = 6;
+	const pLarge = 8;
+
+	 rSmall = (qSmall * pSmall);
+	 rMedium = (qMedium * pMedium);
+	 rLarge = (qLarge * pLarge);
+
+	 tPizza = (rSmall + rLarge + rMedium) 
+
+	document.write("De prijzen van de gevraagde pizzas :" + '<br>' + '<br>' + "Voor de " + qSmall + " small pizzas = " + rSmall + ".00 euro");
+	document.write('<br>' + "Voor de " + qMedium + " medium pizzas = " + rMedium + ".00 euro");
+	document.write('<br>' + "Voor de " + qLarge + " small pizzas = " + rLarge + ".00 euro" + '<br>' + '<br>');
+	document.write("Dus voor alles bij elkaar = " + tPizza + ".00 euro")
+}
+</script> 
+<style type="text/css">
+	
+	h3 {
+		color: green;
+	}
+
+	h1 {
+		color: blue;
+	}
+	
+</style>
+</body>
+</style>
+</html>
